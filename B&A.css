@@ -1,4 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
 body {
+    background-color: #a2a2a2;
+    background: linear-gradient(to right, #e2e2e2, #a7b9b6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
     background-image: url("p.jpg");
     margin: 0%;
     padding: 0%;
