@@ -4,71 +4,105 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="B&A.css" >
+    <link rel="stylesheet" type="text/css" href="B&A.css" >
+    <script src="B&W.js" defer></script>
 </head>
 <body>
-    <ul class="menuul">
-		<li class="menuli"><a href="principal.html">B&A</a></li>
-		<li class="menuli"><a href="sobreaempresa.html">Sobre a empresa</a></li>
-	  	<li class="menuli"><a href="imoveis.html">Imoveis</a></li>
-		<li class="menuli"><a href="portifolio.html">portfolio</a></li>
-		<li class="menuli"><a href="#">Contato</a></li>
-    </ul>
-
-    <div id="area">
-        <form id="formulario">
-            <fieldset>
-            <div>
-                <legend>Paradise</legend>
-            </div>
-            <br>
-            <br>
-            <div>
-                <label class="formu" for="nome">Nome:</label>
-                <input class="nome" type="text" id="nome" name="usuario_nome">
+    <header>
+      <a href="principal.html" class="logo">B&W</a>
+      <div class="group">
+        <ul class="navigation">
+          <li><a href="sobreaempresa.html">Sobre a Empresa</a></li>
+          <li><a href="imoveis.html">imoveis</a></li>
+          <li><a href="portifolio.html">Portifolio</a></li>
+          <li><a href="signin.html">Login</a></li>
+          </ul>
+          <div class="search">
+            <span class="icon">
+              <ion-icon name="search-outline" class="searchbtn"></ion-icon>
+              <ion-icon name="close-outline" class="closebtn" ></ion-icon>
+              </span>
               </div>
-              <br>
-              <div>
-                <label class="formu" for="mail">E-mail:</label>
-                <input class="mail" type="email" id="mail" name="usuario_email">
               </div>
-              <br>
-              <div>
-                <label class="formu" for="cpf">CPF:</label>
-                <input class="cpf" type="number" id="cpf" name="usuario_cpf">
+              <div class="searchbox">
+                <input type="text" placeholder="pesquise aqui"
               </div>
-              <br>
-              <div>
-                <label class="formu" for="tel">Telefone:</label>
-                <input class="Telefone" type="tel" id="Telefone" name="usuario_telefone">
-              </div>
-              <p>Ao informa meu dados eu concordo com a politica de privacidade</p>
-              <br>
-              <div class="button">
-                <button class="cadastre-se" type="submit">Cadastrar</button>
-              </div>
-            </form>
-        </div>
+  </header>
+  
+   <br><br><br><br><br><br><br><br><br><br>
+   <h1>Apartamento com área privativa para aluguel, Senhora das Graças - Betim/MG</h1>
+   
 
-	<h1 class="info">Sobre o apartamento:</h1>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js">
+</script>
 
-    <br>
+<script nomodule src="https://unpkg.com/ionicons@5s.5.2/dist/ionicons/ionicons.js">
+</script>
 
-    <ul class="infoli">
-      <li class="infoli">Quartos</li>
-      <li class="infoli">Espaço Gourmet</li>
-      <li class="infoli">Piscina</li>
-      <li class="infoli">Academia</li>
-      <li class="infoli">Bicicletário</li>
-      <li class="infoli">Wi-Fi nas áreas comuns</li>
-      <li class="infoli">Jardim</li>
- 
-    </ul>
-    <br>
-    <h1 class="info">endereço</h1>
-    <p>Vila Albert Sampaio- Rio branco</p>
+<script>
+  let searchbtn = document.querySelector('.searchbtn');
+  let closebtn = document.querySelector('.closebtn');
+  let searchbox = document.querySelector('.searchbox');
+  
+  
+  searchbtn.onclick = function(){
+    searchbox.classList.add('active');
+    closebtn.classList.add('active');
+    searchbtn.classList.add('active');
+    
+  }
+  closebtn.onclick = function(){
+    searchbox.classList.remove('active');
+    closebtn.classList.remove('active');
+    searchbtn.classList.remove('active');
+  }
+  
+</script>
+      
+      
+    <div class="container-slider">
+    <button id="prev-button"><img src="arrow.png" alt="prev-button"></button>
+    <div class="container-images">
+      <img src="a2.png" alt="casa" class="slider on">
+      <img src="abcd.jpg" alt="casa" class="slider">
+    </div>
+    <button id="next-button"><img src="arrow.png" alt="next-button"></button>
+  </div>
+  
+  <h1>Descrição</h1>
+  <br>
+  <br>
+  <p>(PODE SER ALUGADO COM OU SEM MOBILIA )-
+APARTAMENTO AMPLO, COM 3 QUARTOS, SALA CONJUGADA COM COPA, COZINHA, BANHEIRO SOCIAL E ÁREA PRIVATIVA. PRÓXIMO A AV EDMEIA MATTOS LAZZAROTI, POUCOS MINUTOS DO CENTRO DE BETIM-
+OPÇAO DE LOCAÇÃO MOBILIADO R$1750,00
+(*Confirmar quais móveis ficarão na locação)</p>
+<br>
+<br>
+<h1>Especificações</h1>
+<br>
+<br>
+<table>
+  <tr>
+    <th>1 Banheiro</th>
+    <th>2 quartos</th>
+    <th>1° Andar</th>
+  </tr>
+  <tr>
+    <td>54m²</td>
+    <td>1 Varanda</td>
+    <td>1 Garagem</td>
+  </tr>
+</table>
+<br>
+<br>
+<h1>localização</h1>
+<br><br>
+<div class="localização">
+  <iframe src="https://maps.app.goo.gl/XFqyLuDDbfBKSv1Z9"
+</div>
+    <br><br>
 
-    <footer class="rodape" id="contato">
+    <footer class="rodape" id="Contato">
         <div class="rodape-div">
     
             <div class="rodape-div-1">
@@ -108,4 +142,4 @@
     </footer>
     
 </body>
-</html>
+		      </html>
