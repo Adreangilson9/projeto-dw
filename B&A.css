@@ -290,4 +290,15 @@ td, th {
         padding: 60px 0px 40px 0px;
     }
 }
+.localização {
+    position: relative;
+    width: 600px;
+    height: 500px;
+    background: #fff;
+}
 
+.localização iframe {
+  width: 100%;
+  height: 100%;
+
+}
