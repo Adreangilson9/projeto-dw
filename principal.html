@@ -5,76 +5,104 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aba principal</title>
     <link rel="stylesheet" href="B&A.css" >
+    
 </head>
 
 <body>
 
-    <ul class="menuul">
-		<li class="menuli"><a href="principal.html">B&A</a></li>
-		<li class="menuli"><a href="sobreaempresa.html">Sobre a empresa</a></li>
-	  	<li class="menuli"><a href="imoveis.html">Imoveis</a></li>
-		<li class="menuli"><a href="portifolio.html">portfolio</a></li>
-		<li class="menuli"><a href="#">Contato</a></li>
-    </ul>
-	<header>
+    <header>
+      <a href="principal.html" class="logo">B&W</a>
+      <div class="group">
+        <ul class="navigation">
+          <li><a href="sobreaempresa.html">Sobre a Empresa</a></li>
+          <li><a href="imoveis.html">imoveis</a></li>
+          <li><a href="portifolio.html">Portifolio</a></li>
+          <li><a href="signin.html">Login</a></li>
+          </ul>
+          <div class="search">
+            <span class="icon">
+              <ion-icon name="search-outline" class="searchbtn"></ion-icon>
+              <ion-icon name="close-outline" class="closebtn" ></ion-icon>
+              </span>
+              </div>
+              </div>
+              <div class="searchbox">
+                <input type="text" placeholder="pesquise aqui"
+              </div>
+              </header>
+              <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js">
+</script>
 
-	<h1>Apartamentos que podem te interessar</h1>
-	<br>
-	<div class="content">
-		<div class="slides">
-			<input class="i" type="radio" name="slide" id="slide1" checked>
-		    <input class="i" type="radio" name="slide" id="slide2">
-		    <input class="i" type="radio" name="slide" id="slide3">
-		    <input class="i" type="radio" name="slide" id="slide4">
+<script nomodule src="https://unpkg.com/ionicons@5s.5.2/dist/ionicons/ionicons.js">
+</script>
 
-	        <div class="slid s1">
-				<a target="_blank" href="a1.html"><img src="a1.jpg" alt="a1"></a>
-			</div>
-			<div class="slide"><a target="_blank" href="a2.html"><img src="abc.webp" alt="a2"></a>
-	        </div>
-			<div class="slide">
-				<a target="_blank" href="a3.html"><img src="abcd.jpg" alt="a3"></a>
-			</div>
-			<div class="slide"><a target="_blank" href="a4.html"><img src="a2.png" alt="a4"></a>
-		        </header>		</div>
-        </div>
-	<section>
-
-	<div class="navegacao">
-	<label class="bar" for="slide1"></label>
-	<label class="bar" for="slide2"></label>
-	<label class="bar" for="slide3"></label>
-	<label class="bar" for="slide4"></label>
-	</section>	
-   </div>
-   </div>
-   <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-		table{ border = 1px
-} 
-    <tr>
-        <th></th>
-        <th></th>
-        <th></th>
-    </tr>
-    <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
-</table>
-   
-   
-   
+<script>
+  let searchbtn = document.querySelector('.searchbtn');
+  let closebtn = document.querySelector('.closebtn');
+  let searchbox = document.querySelector('.searchbox');
+  
+  
+  searchbtn.onclick = function(){
+    searchbox.classList.add('active');
+    closebtn.classList.add('active');
+    searchbtn.classList.add('active');
+    
+  }
+  closebtn.onclick = function(){
+    searchbox.classList.remove('active');
+    closebtn.classList.remove('active');
+    searchbtn.classList.remove('active');
+  }
+  
+</script>
+<script>
+  alert("Utilizamos cookies para oferecer melhor experiência, melhorar o desempenho, analisar como você interage em nosso site e personalizar conteúdo. Ao utilizar este site, você concorda com o uso de cookies.")
+</script>
+<h1>Destaques</h1>
+<div class="exibir-casa">
+  <div class="exibir">
+    <img src="a.jpg"
+    <div class="exibir-p">
+    <h1>titulo</h1>
+    <p>o neimar</p>
+    <a href="a2.html" class="exibir-btn">leiama mais</a>
+    </div>
+  <div class="exibir">
+    <img src="abcd.jpg"
+    <div class="exibir-p">
+    <h1>titulo</h1>
+    <p>o neimar</p>
+    <a href="a1.html" class="exibir-btn">leiama mais</a>
+    </div>
+  <div class="exibir">
+    <img src="a1.jpg"
+    <div class="exibir-p">
+    <h1>titulo</h1>
+    <p>o neimar</p>
+    <a href="a3.html" class="exibir-btn">leiama mais</a>
+    </div>
+  <div class="exibir">
+    <img src="a1.jpg"
+    <div class="exibir-p">
+    <h1>titulo</h1>
+    <p>o neimar</p>
+    <a href="" class="exibir-btn">leiama mais</a>
+    </div>
+  <div class="exibir">
+    <img src="a1.jpg"
+    <div class="exibir-p">
+    <h1>titulo</h1>
+    <p>o neimar</p>
+    <a href="" class="exibir-btn">leiama mais</a>
+    </div>
+    <div class="exibir">
+    <img src="a1.jpg"
+    <div class="exibir-p">
+    <h1>titulo</h1>
+    <p>o neimar</p>
+    <a href="" class="exibir-btn">leiama mais</a>
+    </div>
+  
    <footer class="rodape" id="contato">
     <div class="rodape-div">
 
